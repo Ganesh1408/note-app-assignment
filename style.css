@@ -1,0 +1,130 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+/* .not-app-container{
+    position:relative
+} */
+.title{
+    font-size: 30px;
+    font-weight:800;
+    padding:20px;
+    margin-left:140px;
+}
+.note_title{
+    font-size: 16px;
+    font-weight:700;
+    margin:20px auto;
+    width:80%;
+    height:60px;
+    border-radius: 6px;
+    padding:20px;
+    color:grey;
+
+}
+.note_content{
+    font-size:18px;
+    font-weight: 600;
+    width:80%;
+    margin :0px auto ;
+    padding:20px;
+    color: grey ;
+    border-radius: 6px;
+}
+.note-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+}
+.tag{
+    color:grey;
+    font-size:16px;
+    font-weight: 600;
+    padding:20px;
+    
+    width:100%;
+    border-radius: 6px;
+}
+.button{
+    color:white;
+    background-color:cornflowerblue;
+    padding:20px;
+    font-size: 16px;
+    border-radius:8px;
+    border:none;
+    width:130px;
+    position: absolute;
+    right:160px;
+    bottom:-60px;
+    
+    
+}
+.icon{
+    font-size: 60px;
+    color:cornflowerblue;
+    /* width:10%; */
+}
+.tag-container{
+    width:80%;
+    display:Flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px auto;
+}
+.list-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin:40px auto;
+    width:80%;
+    list-style-type: none;
+    display: none;
+    overflow-y: auto;
+}
+.list{
+    
+    height:280px;
+    width:300px;
+    border:1px solid black;
+    border-radius: 6px;
+    
+
+
+}
+#note-heading{
+    font-size:24px;
+    padding:20px;   
+
+}
+#note-content{
+    font-size:16px;
+    padding:20px;
+    padding-top:0px
+}
+#note-tag{
+    
+    font-size:16px;
+    padding:10px 0px;
+    margin-left:20px;
+    background-color: lightblue;
+    color:blue;
+    padding-left:10px;
+    padding-right:10px;
+    width:max-content;
+    height:30px;
+    text-align: center;
+    border-radius: 30%;
+
+}
+.modify{
+    display:flex;
+    justify-content: flex-end;
+    margin-right:10px;
+    padding:10px;
+}
+#time{
+    padding:20px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous"> 
+    <link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css", integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD", crossorigin="anonymous")>
+    
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="not-app-container">
+        <h1 class="title">Note App</h1>
+        <div class="note-container">
+        <input type="text" name="input" id="title" placeholder="Note title" class="note_title">
+        <textarea name="note" id="content" cols="30" rows="10" class="note_content" placeholder="Note Content"></textarea>
+        <div class="tag-container">
+        <input type="text" name="tag" id="tag" class="tag" placeholder="add Tag">
+        <i id="tagButton" class="bi bi-file-plus-fill icon"></i>
+    </div>
+        <button id="save-button" class="button">Save Note</button>
+    </div>
+    </div>
+    <ul id="note-list" class="list-container">
+        <li class="list" id="list-item">
+            <span class="modify">
+            <i id="delete" class="bi bi-archive-fill"></i>
+        </span>
+            <h3 id="note-heading"></h3>
+            <p id="note-content"></p>
+            <p id="note-tag"></p>
+            <p id="time"></p>
+            
+        </li>
+    </ul>
+</body>
+</html>
