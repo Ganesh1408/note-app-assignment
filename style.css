@@ -1,130 +1,155 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: "Roboto";
 }
-/* .not-app-container{
-    position:relative
-} */
-.title{
-    font-size: 30px;
-    font-weight:800;
-    padding:20px;
-    margin-left:140px;
-}
-.note_title{
-    font-size: 16px;
-    font-weight:700;
-    margin:20px auto;
-    width:80%;
-    height:60px;
-    border-radius: 6px;
-    padding:20px;
-    color:grey;
 
+.note-app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #f0f0f0;  
 }
-.note_content{
-    font-size:18px;
+
+.title {
+    font-size: 30px;
+    font-weight: 800;
+    padding: 20px;
+    margin-left: 140px;
+}
+
+.note_title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px auto;
+    width: 80%;
+    height: 60px;
+    border-radius: 6px;
+    padding: 20px;
+    color: grey;
+}
+
+.note_content {
+    font-size: 18px;
     font-weight: 600;
-    width:80%;
-    margin :0px auto ;
-    padding:20px;
-    color: grey ;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    color: grey;
     border-radius: 6px;
 }
-.note-container{
-    display:flex;
+
+.note-container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-
 }
-.tag{
-    color:grey;
-    font-size:16px;
+
+.tag {
+    color: grey;
+    font-size: 16px;
     font-weight: 600;
-    padding:20px;
-    
-    width:100%;
+    padding: 20px;
+    width: 100%;
     border-radius: 6px;
 }
-.button{
-    color:white;
-    background-color:cornflowerblue;
-    padding:20px;
+
+.button {
+    color: white;
+    background-color: cornflowerblue;
+    padding: 20px;
     font-size: 16px;
-    border-radius:8px;
-    border:none;
-    width:130px;
+    border-radius: 8px;
+    border: none;
+    width: 130px;
     position: absolute;
-    right:160px;
-    bottom:-60px;
-    
-    
+    right: 160px;
+    bottom: -60px;
 }
-.icon{
+
+.icon {
     font-size: 60px;
-    color:cornflowerblue;
-    /* width:10%; */
+    color: cornflowerblue;
 }
-.tag-container{
-    width:80%;
-    display:Flex;
+
+.tag-container {
+    width: 80%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin:20px auto;
+    margin: 20px auto;
 }
-.list-container{
+
+.list-container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin:40px auto;
-    width:80%;
-    list-style-type: none;
-    display: none;
-    overflow-y: auto;
+    margin-top: 80px;
+    gap: 20px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 20px;
 }
-.list{
-    
-    height:280px;
-    width:300px;
-    border:1px solid black;
+
+/* .list {
+    height: 280px;
+    width: 300px;
+    border: 1px solid black;
     border-radius: 6px;
-    
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
 
+.note-heading {
+    font-size: 24px;
+}
 
+.note-content {
+    font-size: 16px;
+    padding-top: 0;
 }
-#note-heading{
-    font-size:24px;
-    padding:20px;   
 
-}
-#note-content{
-    font-size:16px;
-    padding:20px;
-    padding-top:0px
-}
-#note-tag{
-    
-    font-size:16px;
-    padding:10px 0px;
-    margin-left:20px;
+.note-tag {
+    width: max-content;
+    padding: 20px;
     background-color: lightblue;
-    color:blue;
-    padding-left:10px;
-    padding-right:10px;
-    width:max-content;
-    height:30px;
+    color: blue;
+    border-radius: 20px;
     text-align: center;
-    border-radius: 30%;
+}
 
-}
-.modify{
-    display:flex;
+.modify {
+    display: flex;
     justify-content: flex-end;
-    margin-right:10px;
-    padding:10px;
+    margin-right: 10px;
+    padding: 10px;
 }
-#time{
-    padding:20px;
+
+
+
+.note {
+    height: 280px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 20px;
+    padding: 20px;
+    line-height: 2.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .list-container {
+        gap: 15px;
+    }
+    .note {
+        width: 100%;
+        height: auto;
+    }
 }
